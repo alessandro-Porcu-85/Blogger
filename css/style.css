@@ -1,3 +1,4 @@
+@import url('../css/fonts.css');
 html,
 body {
     margin: 0%;
@@ -37,9 +38,11 @@ ul {
 }
 
 .nav .nav-brand a {
+    color: red;
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
+    font-family: Abel;
 }
 
 .nav .nav-menu {
