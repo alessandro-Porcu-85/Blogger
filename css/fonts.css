@@ -9,23 +9,23 @@
     
     @font-face {
         font-family: Anton;
-        src: url('/Users/alessandro/Documents/Sites/Blogger/fonts/Abel,Anton,Josefin_Sans,Lexend_Deca,Livvic/Anton/Anton-Regular.ttf');
+        src: url('../fonts/Anton/Anton-Regular.ttf');
     }
-    /*font-family: VariableFont_wght*/
+    /*font-family: JosefinSans*/
     
     @font-face {
         font-family: JosefinSans;
-        src: url('/Users/alessandro/Documents/Sites/Blogger/fonts/Abel,Anton,Josefin_Sans,Lexend_Deca,Livvic/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
+        src: url('../fonts/Josefin_Sans/static/JosefinSans-Regular.ttf');
     }
     /*font-family: LexendDeca-Regular*/
     
     @font-face {
         font-family: LexendDeca;
-        src: url('/Users/alessandro/Documents/Sites/Blogger/fonts/Abel,Anton,Josefin_Sans,Lexend_Deca,Livvic/Lexend_Deca/LexendDeca-Regular.ttf');
+        src: url('../fonts/Lexend_Deca/LexendDeca-Regular.ttf');
     }
     /*font-family:  Livvic-Regular*/
     
     @font-face {
         font-family: Livvic;
-        src: url('/Users/alessandro/Documents/Sites/Blogger/fonts/Abel,Anton,Josefin_Sans,Lexend_Deca,Livvic/Livvic/Livvic-Regular.ttf');
+        src: url('../fonts/Livvic/Livvic-Regular.ttf');
     }

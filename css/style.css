@@ -6,11 +6,30 @@ body {
     overflow-x: hidden;
 }
 
+:root {
+    /*Theme colours*/
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-black: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    /*------------Gradient-colors--------------*/
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /*--------------------------------------------------------------*/
+    /* Theme variables font-family */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton';
+    --JosefinSans: 'JosefinSans';
+    --LexendDeca: 'LexendDeca';
+    --Livvic: 'Livvic';
+}
+
 
 /*---------------------Global Classes----------------------*/
 
 a {
     text-decoration: none;
+    color: var(--text-gray);
 }
 
 .flex-row {
@@ -33,20 +52,47 @@ ul {
     background-color: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 40vh;
+    min-height: 10vh;
+    /*increase to view the menu in responsive viewport*/
     overflow: hidden;
+    transition: height 1s ease-in-out;
 }
 
 .nav .nav-brand a {
     color: red;
     font-size: 1.6rem;
+    margin-top: -0.2rem;
     padding: 1rem 0;
     display: block;
-    font-family: Abel;
+    font-family: var(--LexendDeca);
+    font-size: 1.9rem;
 }
 
 .nav .nav-menu {
     justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse {
+    height: 30rem;
 }
 
 .nav .nav-items {
@@ -55,15 +101,47 @@ ul {
 }
 
 .nav .nav-items .nav-link {
+    font-family: var(--Abel);
     font-size: 1.6rem;
     padding: 1rem 2rem;
     position: relative;
-    color: red;
+}
+
+.nav .nav-items .nav-link:hover {
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a {
+    color: var(--white);
 }
 
 .nav .social {
     padding: 1.4rem 0;
 }
 
+.nav .social i {
+    padding: 0 .6rem;
+}
+
+.nav .social i:hover {
+    color: #a1c4cf;
+}
+
 
 /*--------x------------Navbar-----------x-----------*/
+
+
+/*------------Viewport less than or equal to 750px-------------*/
+
+@media only screen and (max-width:750px) {
+    .nav .nav-menu,
+    .nav-items {
+        flex-direction: column;
+    }
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+
+/*------x-----Viewport less than or equal to 750px-------x-----*/
