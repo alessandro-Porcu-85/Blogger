@@ -14,7 +14,12 @@ body {
     --white: #ffffff;
     --midnight: #104f55;
     /*------------Gradient-colors--------------*/
+    --moon: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --amore: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    --cielo: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    --cold: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    --phenix: linear-gradient(to right, #f83600 0%, #f9d423 100%);
     /*--------------------------------------------------------------*/
     /* Theme variables font-family */
     --Abel: 'Abel', cursive;
@@ -42,6 +47,39 @@ ul {
     list-style-type: none;
 }
 
+h1 {
+    font-family: var(--LexendDeca);
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-family: var(--LexendDeca);
+}
+
+h3 {
+    font-family: var(--Abel);
+    font-size: 2.3rem;
+}
+
+button.btn {
+    border: none;
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+    color: var(--white);
+    font-size: 1.6rem;
+    background: var(--moon);
+    cursor: pointer;
+    font-family: var(--Livvic);
+}
+
+span {
+    font-family: var(--Abel);
+}
+
+.container {
+    margin: 0 5vw;
+}
+
 
 /*-----------x---------Global Classes---------x------------*/
 
@@ -55,7 +93,7 @@ ul {
     min-height: 10vh;
     /*increase to view the menu in responsive viewport*/
     overflow: hidden;
-    transition: height 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .nav .nav-brand a {
@@ -129,6 +167,102 @@ ul {
 
 
 /*--------x------------Navbar-----------x-----------*/
+
+
+/*---------------------Main Content-----------------------*/
+
+
+/*-----------Site Title------------*/
+
+main .site-title {
+    background-image: url('../assets/background/Backg_custom.jpg');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    margin-top: -13px;
+}
+
+main .site-title .site-background {
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1,
+h3 {
+    margin: .3rem;
+}
+
+.btn {
+    margin: 1.8rem;
+}
+
+.btn:hover {
+    background: transparent;
+    border: 3px solid var(--bg-black);
+    color: var(--bg-black);
+    font-weight: bold;
+}
+
+
+/*----x------Site Title------x-----*/
+
+
+/*-----------Blog Carousel------------*/
+
+main .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 29.3%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f9d423;
+}
+
+main .blog-content .blog-title {
+    margin-top: -5px;
+    padding: 1rem 0;
+}
+
+main .blog-title h3 {
+    font-size: 50px;
+    letter-spacing: .4rem;
+}
+
+main .blog-content .btn-blog {
+    padding: .7rem 2rem;
+    background: var(--moon);
+    margin: .5rem;
+}
+
+main .blog-content .btn-blog:hover {
+    padding: .7rem 2rem;
+    border: none;
+    color: var(--white);
+    background: var(--phenix);
+    margin: .5rem;
+}
+
+main .blog-content span {
+    letter-spacing: .2rem;
+    padding-top: .5rem;
+    display: block;
+}
+
+section .container .owl-nav {
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/*----x------Blog Carousel------x-----*/
+
+
+/*---------x-----------Main Content---------x-------------*/
 
 
 /*------------Viewport less than or equal to 750px-------------*/
