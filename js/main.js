@@ -8,7 +8,6 @@ $(document).ready(function() {
         $nav.toggleClass('collapse');
     })
 
-    //Owl-carousel for blog
 
 
     $(".owl-carousel").owlCarousel({
@@ -35,4 +34,4 @@ $(document).ready(function() {
             }
         }
     });
-});
+})

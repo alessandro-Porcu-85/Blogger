@@ -209,57 +209,85 @@ h3 {
 /*----x------Site Title------x-----*/
 
 
-/*-----------Blog Carousel------------*/
+/*---------------Blog Carousel------------------*/
 
-main .blog-content {
+.owl-container {
+    margin-top: -140px;
+    background-color: none;
+    width: 100%;
+    height: 90vh;
+}
+
+main .blog .blog-post {
+    padding-top: 6rem;
+}
+
+.blog-content {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 29.3%;
+    width: 80%;
     margin: 3rem 2rem;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-    background-color: #f9d423;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2)
 }
 
-main .blog-content .blog-title {
-    margin-top: -5px;
-    padding: 1rem 0;
+.blog-title {
+    padding-top: .2rem;
+    margin-bottom: 20px;
 }
 
-main .blog-title h3 {
+.blog-title h3 {
     font-size: 50px;
-    letter-spacing: .4rem;
+    padding-bottom: .6rem;
+    ;
 }
 
-main .blog-content .btn-blog {
+.btn-blog {
     padding: .7rem 2rem;
-    background: var(--moon);
+    background: var(--cielo);
     margin: .5rem;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    width: 40%;
+    border-radius: 20px;
+    margin-top: 0.4rem;
 }
 
-main .blog-content .btn-blog:hover {
-    padding: .7rem 2rem;
-    border: none;
-    color: var(--white);
+.btn-blog:hover {
     background: var(--phenix);
-    margin: .5rem;
 }
 
-main .blog-content span {
-    letter-spacing: .2rem;
-    padding-top: .5rem;
+span {
     display: block;
+    padding: 1.2rem 0;
+    font-size: 20px;
+    letter-spacing: .2rem;
 }
 
-section .container .owl-nav {
-    position: absolute;
-    top: 0%;
-    margin: 0 auto;
-    width: 100%;
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+    color: var(--text-gray);
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+}
+
+.owl-nav .owl-prev .owl-nav-prev:hover,
+.owl-nav .owl-next .owl-nav-next:hover {
+    color: var(--text-gray);
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent;
+    color: var(--text-gray)
 }
 
 
-/*----x------Blog Carousel------x-----*/
+/*------x--------Blog Carousel---------x--------*/
 
 
 /*---------x-----------Main Content---------x-------------*/
