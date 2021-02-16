@@ -8,8 +8,17 @@
     <!--Font Awesome Icons-->
     <link rel="stylesheet" href="./css/all.css">
 
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.css">
+
+
+
     <!--Custom-Style.css-->
     <link rel="stylesheet" href="/css/style.css">
+    <!--Jquery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 </head>
 
 <body>
@@ -18,6 +27,11 @@
         <div class="nav-menu flex-row">
             <div class="nav-brand">
                 <a href="#" class="text-gray">Blogger</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
             <div>
                 <ul class="nav-items">
@@ -52,12 +66,102 @@
 
 
     <!-------------x-------------Navigation--------------x-------------------->
+    <!-------------------------Main Site Section------------------------------>
+    <main>
+        <!---------------Site Title----------------->
+        <section class="site-title">
+            <div class="site-background">
+                <h3>Tours & Travels</h3>
+                <h1>Amazing Place on Earth</h1>
+                <button class="btn">Explore</button>
+            </div>
+        </section>
+
+
+        <!-------x--------Site Title--------x------->
+        <!----------------Blog Carousel---------------->
+
+        <section>
+
+            <div class="owl-container">
+                <div class="owl-carousel owl-theme">
+                    <div class="blog-content">
+                        <img src="/assets/blog/rafting.png" alt="post-1">
+                        <div class="blog-title">
+                            <h3>Rafting</h3>
+                            <button class="btn-blog">Book now</button>
+                            <span>Get your experience</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <img src="/assets/blog/trekking.png" alt="post-2">
+                        <div class="blog-title">
+                            <h3>Trekking</h3>
+                            <button class="btn-blog">Book now</button>
+                            <span>Get your experience</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <img src="/assets/blog/rock-climbing.jpg" alt="post-3">
+                        <div class="blog-title">
+                            <h3>Climbing</h3>
+                            <button class="btn-blog">Book now</button>
+                            <span>Get your experience</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <img src="/assets/blog/horses.jpg" alt="post-3">
+                        <div class="blog-title">
+                            <h3>Riding</h3>
+                            <button class="btn-blog">Book now</button>
+                            <span>Get your experience</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <img src="/assets/blog/mountain_png.png" alt="post-3">
+                        <div class="blog-title">
+                            <h3>Camping</h3>
+                            <button class="btn-blog">Book now</button>
+                            <span>Get your experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-navigation">
+                    <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                    <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <!------x---------Blog Carousel-----x---------->
+    </main>
+    <!------------x------------Main Site Section------------x----------------->
 
 
 
 
     <!--Custom JS file-->
     <script src="js/main.js"></script>
+
+    <!--Owl Carousel-->
+
+
+    <script src="/js/owl.carousel.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+
+
+    <!--Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <!--Owl Carousel-->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>>
 </body>
 
 </html>
