@@ -437,6 +437,7 @@ span {
 .header-3 {
     padding-top: 3rem;
     font-size: 40px;
+    padding-left: 30px;
 }
 
 .site-content .sidebar .popular-post .post-content {
@@ -482,6 +483,7 @@ span {
     width: 80%;
     height: 1.9rem;
     padding: .3rem .5rem;
+    margin-left: 30px;
     font-family: var(--LexendDeca);
     font-size: 1.3rem;
 }
@@ -494,6 +496,7 @@ span {
     font-size: 18px;
     color: var(--text-gray);
     background: var(--sky);
+    margin-left: 30px;
 }
 
 .btn-form:hover {
@@ -501,11 +504,112 @@ span {
     color: white;
 }
 
+.tag {
+    background: var(--cold);
+    padding: .3rem 2rem;
+    border-radius: 3rem;
+    margin: .4rem .6rem;
+    color: var(--white);
+}
+
+.tags {
+    padding-top: 4rem;
+    padding-left: 4px;
+    margin-left: 4px;
+}
+
 
 /*------x--------Sidebar---------x--------*/
 
 
 /*---------x-----------Main Content---------x-------------*/
+
+
+/*--------------------Footer----------------------*/
+
+.footer {
+    height: 100%;
+    background: black;
+    padding-bottom: 1px;
+    position: relative;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container>div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+.input-element input {
+    padding: .4rem .7rem;
+    display: inline-block;
+    width: 82%;
+    border: none;
+    height: 94%;
+    margin-left: -30px;
+    font-size: 18px;
+}
+
+span.footer-btn {
+    background: var(--sky);
+    padding: .5rem .8rem;
+    margin-left: 78.5%;
+    margin-top: -18%;
+    width: 5%;
+    cursor: pointer;
+}
+
+span.footer-btn:hover {
+    background: var(--phenix);
+}
+
+.footer .instagram div>img {
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+.follow div i {
+    color: white;
+    padding: 0 .4rem;
+}
+
+.rights {
+    justify-content: center;
+    font-family: var(--JosefinSans);
+    font-size: 15px;
+    color: var(--text-light)
+}
+
+.rights a {
+    color: var(--white);
+}
+
+.move-up {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+.move-up span {
+    color: rgb(89, 87, 87);
+}
+
+.move-up span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+/*-----------x----------Footer----------x-------------*/
 
 
 /*------------Viewport less than or equal to 750px-------------*/
