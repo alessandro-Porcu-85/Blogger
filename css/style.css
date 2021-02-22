@@ -611,6 +611,10 @@ span.footer-btn:hover {
     cursor: pointer;
 }
 
+.social-footer {
+    cursor: pointer;
+}
+
 
 /*-----------x----------Footer----------x-------------*/
 
@@ -650,3 +654,61 @@ span.footer-btn:hover {
 
 
 /*------x-----Viewport less than or equal to 750px-------x-----*/
+
+
+/*------------Viewport less than or equal to 1130px-------------*/
+
+@media only screen and (max-width:1130px) {
+    .post-content>.post-image .post-info {
+        background: var(--sky);
+        width: 70%;
+        padding: .02rem;
+        position: absolute;
+        bottom: -.3%;
+        left: 9vw;
+        border-radius: 3rem;
+        margin-bottom: 12px;
+    }
+    .post-info span {
+        font-size: 13px;
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+    }
+    .post-btn {
+        font-size: 19px;
+    }
+    .btn-form {
+        width: 88%;
+    }
+    span.footer-btn {
+        margin-left: 77.8%;
+        margin-top: -23%;
+    }
+    .site-content>.sidebar .category-list .list-items {
+        width: 90%;
+    }
+    .ads-info span {
+        font-size: 12px !important;
+        background: var(--cold);
+        padding-top: 4px;
+        padding-left: 9px;
+        width: 100%;
+        color: var(--white);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-bottom: 2px;
+    }
+    .sidebar {
+        width: 110%;
+    }
+    .owl-container {
+        margin-left: 6px;
+    }
+    .btn-blog {
+        font-size: 18px;
+        width: 60%;
+    }
+}
+
+
+/*-------x-----Viewport less than or equal to 1130px-----x--------*/
